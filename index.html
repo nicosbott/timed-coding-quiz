@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- this is how you write comments in html-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li class="highscores"><a href="">View High Scores</a></li>
+                <li class="timer">Time: <span id="timer">0</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="start">
+        <h1>Coding Quiz</h1>
+        <p>The following four questions are related to code. You have one minute to try and answer them all correctly. For every incorrect answer, your score/time will be docked by 15 seconds. Keep an eye on your time!</p>
+        <button id="start">Start Quiz</button>
+    </section>
+
+    <section class="hide" id="questions">
+        <h2 id="question"></h2>
+        <h3 class="answers" id="answers"></h3>
+    </section>
+
+    <section class="hide" id="end">
+        <h2>Finished</h2>
+        <p>Your final score is <span id="score"></span>.</p>
+        <p>Enter your initials: <input type="text" id="initials" max="3"/></p>
+        <button id="enter">Enter</button>
+    </section>
+
+</body>
+
+
+</html>
